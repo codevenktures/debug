@@ -27,7 +27,7 @@ while(len(arr) > 0):
 			if(os.path.isdir(p)):
 				arr.append(p)
 
-filtered_keys = [key for key, value in my_dict.items() if value > start_time]
+filtered_keys = [key for key, value in my_dict.items() if value > float(start_time)]
 
 output_dir = sorted_keys = sorted(filtered_keys, key=lambda x: my_dict[x])
 
